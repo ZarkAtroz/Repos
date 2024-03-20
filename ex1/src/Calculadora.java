@@ -26,25 +26,21 @@ public class Calculadora {
 
     void somar(double num1, double num2){
         result = num1 + num2;
-        System.out.println("Resultado: " + result + "\n");
     }
 
     void subtrair(double num1, double num2){
         result = num1 - num2;
-        System.out.println("Resultado: " + result + "\n");
     }
 
     void multiplicar(double num1, double num2){
         result = num1 * num2;
-        System.out.println("Resultado: " + result + "\n");
     }
 
     void dividir(double num1, double num2){
         if (num2 != 0) {
             result = num1 / num2;
-        System.out.println("Resultado: " + result + "\n");
         } else {
-            System.out.println("Erro: Divisão por zero não é permitida.");
+            System.out.println("Erro: Divisão por zero não é permitida.\n");
         }
     }
 }
