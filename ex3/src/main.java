@@ -76,8 +76,9 @@ public class main {
                         System.out.println("\nNúmero de conta inválido");
                         break;
                     } else if (contas.size() > 0) {
-                        for (ContaBancaria contaExistente : contas) {
-                            if (contaExistente.getNumeroConta() == numeroConta) {
+                        int tamanho = contas.size();
+                        for (int i = 0; i < tamanho; i++) {
+                            if (contas.get(i).getNumeroConta() == numeroConta) {
                                 System.out.println("\nNúmero de conta já cadastrado");
                                 break;
                             } else {
@@ -91,6 +92,7 @@ public class main {
 
                             }
                         }
+                        
                     } else {
                         System.out.println("Saldo inicial: R$ 0,00");
                         double saldo = 0.0;
@@ -99,9 +101,9 @@ public class main {
                 
                         contas.add(novaConta);
                         System.out.println("Conta cadastrada com sucesso");
+                        System.out.print("AAA");
                         
                     }
-
                     scanner.nextLine();
                     break;
                 
@@ -189,9 +191,10 @@ public class main {
                 default:
                     break;
             }
-            
+            System.out.print("BBB");
         } while (opcao != 7);
 
+        System.out.print("CCC");
         scanner.close();
     }
 }
