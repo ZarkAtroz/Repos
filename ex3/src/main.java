@@ -63,7 +63,6 @@ public class main {
                 
                         contas.add(novaConta);
                         System.out.println("Conta cadastrada com sucesso");
-                        System.out.print("AAA");
                         
                     }
                     scanner.nextLine();
@@ -153,10 +152,8 @@ public class main {
                 default:
                     break;
             }
-            System.out.print("BBB");
         } while (opcao != 7);
 
-        System.out.print("CCC");
         scanner.close();
     }
 }
