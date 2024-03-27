@@ -22,6 +22,7 @@ public class Carro {
     }
 
     public int verificaCarro(String placa, String marca) {
+
         if (this.placa.equals(placa) && this.marca.equals(marca)) {
             return 1;
         } else {
